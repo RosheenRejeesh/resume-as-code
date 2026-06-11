@@ -1,0 +1,99 @@
+{
+  "basics": {
+    "name": "Richard Hendricks",
+    "label": "Software Engineer",
+    "email": "richard.hendricks@example.com",
+    "phone": "(+1) 555-0100",
+    "website": "https://richardhendricks.example.com",
+    "summary": "Backend-leaning software engineer with experience in distributed systems, data compression, and high-throughput services.",
+    "location": {
+      "city": "Palo Alto",
+      "countryCode": "US",
+      "region": "CA"
+    },
+    "profiles": [
+      { "network": "GitHub", "username": "rhendricks", "url": "https://github.com/rhendricks" }
+    ]
+  },
+  "work": [
+    {
+      "company": "Pied Piper",
+      "position": "Founding Engineer",
+      "website": "https://piedpiper.example.com",
+      "startDate": "2014-04",
+      "summary": "Built a distributed lossless compression platform from zero to production.",
+      "highlights": [
+        "Designed a sharded storage layer in Go handling 50k requests/sec",
+        "Cut p99 API latency from 800ms to 120ms by redesigning the hot path",
+        "Built a copyright-detection algorithm used by independent artists"
+      ]
+    },
+    {
+      "company": "Hooli",
+      "position": "Senior Software Engineer",
+      "website": "https://hooli.example.com",
+      "startDate": "2013-06",
+      "endDate": "2014-04",
+      "highlights": [
+        "Optimized backend search indexing, reducing reindex time by 35%",
+        "Mentored three junior engineers through onboarding"
+      ]
+    },
+    {
+      "company": "Hooli",
+      "position": "Software Engineer",
+      "startDate": "2012-01",
+      "endDate": "2013-06",
+      "highlights": [
+        "Shipped bugfixes and features across the Java services platform",
+        "Wrote the team's first integration test suite"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Middle-Out",
+      "description": "Open-source compression library",
+      "url": "https://github.com/rhendricks/middle-out",
+      "keywords": ["Go", "Compression", "CLI"],
+      "highlights": ["1.2k GitHub stars", "Used in three production pipelines"]
+    }
+  ],
+  "skills": [
+    { "name": "Backend", "level": "Advanced", "keywords": ["Go", "Java", "gRPC", "PostgreSQL"] },
+    { "name": "Distributed Systems", "level": "Advanced", "keywords": ["Sharding", "Caching", "Load balancing"] },
+    { "name": "Web Development", "level": "Intermediate", "keywords": ["HTML", "CSS", "JavaScript"] },
+    { "name": "Compression", "level": "Expert", "keywords": ["Lossless", "MP4", "Adaptive coding"] }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "location": "Palo Alto, CA",
+      "specialization": "Machine Learning",
+      "startDate": "2008-09",
+      "endDate": "2012-01",
+      "gpa": "3.9",
+      "courses": ["CS2011 - Java Introduction", "DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11",
+      "awarder": "TechCrunch",
+      "summary": "Recognized for advances in lossless compression."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "startDate": "2012-01",
+      "endDate": "2013-01",
+      "summary": "Free coding clubs for young people.",
+      "highlights": ["Awarded 'Teacher of the Month'"]
+    }
+  ]
+}
