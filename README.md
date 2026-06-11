@@ -63,6 +63,31 @@ Check your Actions tab to see if its running correctly.
 
 ![resume](assets/resume.gif)
 
+## AI Authoring (Optional)
+
+Generate a tailored resume from a job description using Claude Code (works great
+in Codespaces — no API key needed).
+
+1. **Build your master profile once.** Run the `intake-profile` skill. It either
+   interviews you or imports an old PDF/CV/LinkedIn export into
+   `profile/master.json` — your full, truthful career history. (See
+   `profile/master.example.json` for the shape.)
+
+2. **Tailor to a job.** Run the `tailor-resume` skill with the job description.
+   It writes `resumes/<company>/resume.json` as a ranked, JD-focused view of your
+   master, and reports any gaps between the JD and your experience.
+
+3. **Honesty gate.** The skills never invent facts. Anything plausible but
+   unconfirmed is tagged `[VERIFY]`; `npm run validate` (run automatically in CI)
+   fails until you confirm or remove it — so nothing unverified is ever
+   published.
+
+4. **Push as usual.** Pushing `resumes/<company>/resume.json` triggers the normal
+   build and deploy.
+
+See `examples/` for a full worked example (master profile → JD → tailored
+resume). Validate any resume locally with `npm run validate`.
+
 ## Advanced (Optional)
 
 Want to preview your resume before pushing?
