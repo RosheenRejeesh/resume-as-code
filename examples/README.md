@@ -20,7 +20,9 @@ This folder shows the AI authoring flow end to end with sample data.
     employer-granted job title; `position` fields are copied verbatim and never
     altered);
   - rephrases one latency bullet's verb ("Cut" → "Reduced") without changing the
-    numbers.
+    numbers;
+  - applies light inline `<strong>` emphasis to JD keywords (e.g. `Go`) in the
+    summary and a highlight — styling only, no fact change.
 
   Every fact traces back to the master — nothing is invented — so there are no
   `[VERIFY]` markers.

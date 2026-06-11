@@ -25,6 +25,10 @@ Ask the user which they have:
   unclear (a date, a title), ask rather than guess.
 - Match the field shapes in
   `.claude/skills/tailor-resume/references/jsonresume-fields.md`.
+- The honesty policy in
+  `.claude/skills/tailor-resume/references/tailoring-rules.md` also applies:
+  record only real facts, and never use `[VERIFY]` in the master — that marker
+  is only for tailored resumes.
 
 ## Finish
 

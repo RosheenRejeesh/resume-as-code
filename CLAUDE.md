@@ -25,6 +25,9 @@ and must not change the build/deploy pipeline.
 - Plausible-but-unconfirmed additions must be tagged ` [VERIFY]`.
 - `npm run validate` fails on schema errors and on any surviving `[VERIFY]`
   marker, so unverified claims cannot deploy.
+- The gate runs on the standard push/PR path (`build` depends on `validate`); it
+  assumes resumes reach `main` through that flow, not via out-of-band manual job
+  runs.
 
 ## Layout
 
