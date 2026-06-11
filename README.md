@@ -4,7 +4,7 @@ Manage multiple resumes, with each getting its own dedicated website.
 
 Automatically generate a professional resume with a proper PDF version, hosted for free via GitHub Pages.
 
-Powered by: [JSONResume](https://jsonresume.org/) + Engineering [Theme](https://github.com/skoenig/jsonresume-theme-engineering) + [GH Pages](https://pages.github.com/)
+Powered by: [JSONResume](https://jsonresume.org/) + Engineering [Theme](https://github.com/skoenig/jsonresume-theme-engineering) + [GH Pages](https://pages.github.com/) + [Claude Code](https://claude.com/claude-code) (AI authoring)
 
 # Behold...
 
@@ -12,6 +12,7 @@ Powered by: [JSONResume](https://jsonresume.org/) + Engineering [Theme](https://
 
 ## Features
 
+- **AI Authoring** - Generate a JD-tailored resume with [Claude Code](https://claude.com/claude-code), backed by a `[VERIFY]` honesty gate so nothing fabricated ever ships. ([jump to it ↓](#ai-authoring-recommended))
 - **Multi-Resume Support** - Manage multiple resumes for different job roles in one place.
 - **One Source of Truth** - Just edit the `resume.json` for the resume you want to change.
 - **Automated Deployment** - Websites are generated and deployed on every resume push.
@@ -55,6 +56,10 @@ Powered by: [JSONResume](https://jsonresume.org/) + Engineering [Theme](https://
 
     ![push](assets/push.gif)
 
+    > 💡 **Skip the hand-editing.** Instead of writing `resume.json` yourself,
+    > let Claude Code tailor it from a job description — see
+    > [AI Authoring](#ai-authoring-recommended) below.
+
 ---
 
 All done! You'll be able to access your live site at `https://<github_username>.github.io/google-resume`
@@ -63,10 +68,18 @@ Check your Actions tab to see if its running correctly.
 
 ![resume](assets/resume.gif)
 
-## AI Authoring (Optional)
+## AI Authoring (Recommended)
 
-Generate a tailored resume from a job description using Claude Code (works great
-in Codespaces — no API key needed).
+This is the fastest way to fill in step 6–7 above: instead of hand-editing
+`resume.json`, let [Claude Code](https://claude.com/claude-code) turn a job
+description into a tailored resume for you. It works great right inside
+Codespaces — **no API key needed** — and ships with two skills and an enforced
+honesty policy.
+
+| Skill | What it does |
+| --- | --- |
+| `intake-profile` | Build `profile/master.json` — your full, truthful career history — by interviewing you or importing an old PDF/CV/LinkedIn export. |
+| `tailor-resume` | Turn a job description + your master into a pruned, JD-ranked `resumes/<company>/resume.json`. |
 
 1. **Build your master profile once.** Run the `intake-profile` skill. It either
    interviews you or imports an old PDF/CV/LinkedIn export into
