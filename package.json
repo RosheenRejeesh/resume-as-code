@@ -4,8 +4,14 @@
     "playwright": "^1.54.1",
     "resumed": "^6.0.0"
   },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
   "scripts": {
     "export-html": "npx resumed render $FILE_PATH/resume.json --output $FILE_PATH/index.html --theme jsonresume-theme-engineering",
-    "export-pdf": "node export-pdf.js $FILE_PATH"
+    "export-pdf": "node export-pdf.js $FILE_PATH",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test"
   }
 }

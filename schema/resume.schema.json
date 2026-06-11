@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://resume-as-code/schema/resume.schema.json",
+  "title": "Resume (engineering-theme compatible)",
+  "type": "object",
+  "required": ["basics"],
+  "additionalProperties": true,
+  "definitions": {
+    "isoDate": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2})?(-[0-9]{2})?$"
+    },
+    "stringArray": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "properties": {
+    "basics": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": true,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "label": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "website": { "type": "string" },
+        "url": { "type": "string" },
+        "summary": { "type": "string" },
+        "location": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "address": { "type": "string" },
+            "postalCode": { "type": "string" },
+            "city": { "type": "string" },
+            "countryCode": { "type": "string" },
+            "region": { "type": "string" }
+          }
+        },
+        "profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "network": { "type": "string" },
+              "username": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "work": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "company": { "type": "string" },
+          "name": { "type": "string" },
+          "position": { "type": "string" },
+          "website": { "type": "string" },
+          "url": { "type": "string" },
+          "startDate": { "$ref": "#/definitions/isoDate" },
+          "endDate": { "$ref": "#/definitions/isoDate" },
+          "summary": { "type": "string" },
+          "highlights": { "$ref": "#/definitions/stringArray" }
+        }
+      }
+    },
+    "volunteer": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "organization": { "type": "string" },
+          "position": { "type": "string" },
+          "url": { "type": "string" },
+          "startDate": { "$ref": "#/definitions/isoDate" },
+          "endDate": { "$ref": "#/definitions/isoDate" },
+          "summary": { "type": "string" },
+          "highlights": { "$ref": "#/definitions/stringArray" }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "institution": { "type": "string" },
+          "area": { "type": "string" },
+          "studyType": { "type": "string" },
+          "location": { "type": "string" },
+          "specialization": { "type": "string" },
+          "startDate": { "$ref": "#/definitions/isoDate" },
+          "endDate": { "$ref": "#/definitions/isoDate" },
+          "gpa": { "type": "string" },
+          "score": { "type": "string" },
+          "courses": { "$ref": "#/definitions/stringArray" }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string" },
+          "level": { "type": "string" },
+          "keywords": { "$ref": "#/definitions/stringArray" }
+        }
+      }
+    },
+    "awards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": { "type": "string" },
+          "date": { "$ref": "#/definitions/isoDate" },
+          "awarder": { "type": "string" },
+          "summary": { "type": "string" }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "url": { "type": "string" },
+          "keywords": { "$ref": "#/definitions/stringArray" },
+          "highlights": { "$ref": "#/definitions/stringArray" },
+          "startDate": { "$ref": "#/definitions/isoDate" },
+          "endDate": { "$ref": "#/definitions/isoDate" }
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "language": { "type": "string" },
+          "fluency": { "type": "string" }
+        }
+      }
+    },
+    "interests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string" },
+          "keywords": { "$ref": "#/definitions/stringArray" }
+        }
+      }
+    }
+  }
+}
