@@ -45,3 +45,18 @@ test("findVerifyMarkers finds a nested marker with its path", () => {
 test("findVerifyMarkers returns empty for a clean doc", () => {
   assert.deepEqual(findVerifyMarkers({ basics: { name: "Ada" }, work: [] }), [])
 })
+
+test("findVerifyMarkers returns (root) for a top-level marked string", () => {
+  assert.deepEqual(findVerifyMarkers("Needs review [VERIFY]"), ["(root)"])
+})
+
+test("findVerifyMarkers finds multiple markers across the document", () => {
+  const doc = {
+    basics: { name: "Ada", summary: "Backend lead [VERIFY]" },
+    work: [{ highlights: ["Shipped X", "Owned K8s [VERIFY]"] }],
+  }
+  assert.deepEqual(findVerifyMarkers(doc), [
+    "basics.summary",
+    "work[0].highlights[1]",
+  ])
+})
