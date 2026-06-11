@@ -1,0 +1,66 @@
+{
+  "basics": {
+    "name": "Richard Hendricks",
+    "label": "Backend Software Engineer",
+    "email": "richard.hendricks@example.com",
+    "phone": "(+1) 555-0100",
+    "website": "https://richardhendricks.example.com",
+    "summary": "Backend software engineer specializing in <strong>distributed systems</strong> and high-throughput services in Go and Java, with a track record of cutting latency and scaling storage layers.",
+    "location": {
+      "city": "Palo Alto",
+      "countryCode": "US",
+      "region": "CA"
+    },
+    "profiles": [
+      { "network": "GitHub", "username": "rhendricks", "url": "https://github.com/rhendricks" }
+    ]
+  },
+  "work": [
+    {
+      "company": "Pied Piper",
+      "position": "Founding Engineer",
+      "website": "https://piedpiper.example.com",
+      "startDate": "2014-04",
+      "summary": "Built a distributed lossless compression platform from zero to production.",
+      "highlights": [
+        "Designed a sharded storage layer in <strong>Go</strong> handling 50k requests/sec",
+        "Reduced p99 API latency from 800ms to 120ms by redesigning the hot path",
+        "Built a copyright-detection algorithm used by independent artists"
+      ]
+    },
+    {
+      "company": "Hooli",
+      "position": "Senior Software Engineer",
+      "website": "https://hooli.example.com",
+      "startDate": "2013-06",
+      "endDate": "2014-04",
+      "highlights": [
+        "Optimized backend search indexing, reducing reindex time by 35%",
+        "Mentored three junior engineers through onboarding"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Middle-Out",
+      "description": "Open-source compression library",
+      "url": "https://github.com/rhendricks/middle-out",
+      "keywords": ["Go", "Compression", "CLI"],
+      "highlights": ["1.2k GitHub stars", "Used in three production pipelines"]
+    }
+  ],
+  "skills": [
+    { "name": "Backend", "level": "Advanced", "keywords": ["Go", "Java", "gRPC", "PostgreSQL"] },
+    { "name": "Distributed Systems", "level": "Advanced", "keywords": ["Sharding", "Caching", "Load balancing"] }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "location": "Palo Alto, CA",
+      "startDate": "2008-09",
+      "endDate": "2012-01"
+    }
+  ]
+}

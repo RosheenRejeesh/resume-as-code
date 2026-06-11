@@ -1,0 +1,16 @@
+Software Engineer, Backend — Google
+
+Minimum qualifications:
+- Bachelor's degree in Computer Science or equivalent experience.
+- Experience with backend development in Go, Java, or C++.
+- Experience building and scaling distributed systems.
+
+Preferred qualifications:
+- Experience optimizing service latency and throughput at scale.
+- Familiarity with gRPC, sharded storage, and caching strategies.
+- Open-source contributions.
+
+About the role:
+You will design, build, and operate large-scale backend services, focusing on
+reliability, latency, and throughput. You will collaborate across teams and
+mentor other engineers.
