@@ -8,6 +8,12 @@ Powered by: [JSONResume](https://jsonresume.org/) + Engineering [Theme](https://
 
 # Behold...
 
+![A resume rendered as a live website](assets/showcase.png)
+
+> Every `resume.json` becomes its own hosted site — clean, ATS-friendly, PDF-downloadable.
+
+...and it deploys itself on every push:
+
 ![deployment](assets/deployment.gif)
 
 ## Features
