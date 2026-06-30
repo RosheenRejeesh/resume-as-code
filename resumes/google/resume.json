@@ -1,0 +1,180 @@
+{
+  "basics": {
+    "name": "Rosheen Rejeesh",
+    "label": "Software Engineer",
+    "email": "rosheenrb@gmail.com",
+    "phone": "(+60) 16 206 9710",
+    "website": "https://www.linkedin.com/in/rosheen-rejeesh-0682aa257",
+    "summary": "Software engineer fresh graduate with hands-on experience developing responsive web applications using HTML, CSS, JavaScript, React.js, Vue.js, Python, and Django. Experienced in frontend development, API integration, bug fixing, and database-driven applications through internships and academic projects. Strong foundation in Git-based workflows, Agile development practices, and building scalable software solutions.",
+    "location": {
+      "city": "Shah Alam",
+      "region": "Selangor",
+      "countryCode": "MY"
+    }
+  },
+
+  "skills": [
+    {
+      "name": "Frontend",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "Vue.js",
+        "Nuxt.js",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "Python",
+        "Django",
+        "Flask",
+        "Java"
+      ]
+    },
+    {
+      "name": "Database",
+      "keywords": [
+        "SQL",
+        "MongoDB",
+        "Firebase"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Git",
+        "Docker",
+        "Trello",
+        "ClickUp"
+      ]
+    }
+  ],
+
+  "work": [
+    {
+      "company": "Tata Consultancy Services",
+      "position": "Software Engineering Intern",
+      "location": "Bangsar South, Kuala Lumpur",
+      "startDate": "2024-11",
+      "endDate": "2025-02",
+      "summary": "Assigned to SEEd.Lab (PETRONAS–TCS social enterprise innovation hub).",
+      "highlights": [
+        "Collaborated with social enterprises to develop automation tools and resolve software bugs.",
+        "Converted raw data into user-friendly PDF reports to improve business operations.",
+        "Researched and implemented Facebook Messenger chatbots and WordPress livestream plugins.",
+        "Developed secure login and signup functionality.",
+        "Implemented custom password validation on Wix signup pages."
+      ]
+    },
+    {
+      "company": "Swipey",
+      "position": "Software Engineering Intern",
+      "location": "Bangsar South, Kuala Lumpur",
+      "startDate": "2023-11",
+      "endDate": "2024-02",
+      "highlights": [
+        "Collaborated with the CEO, product managers, designers, and engineers to deliver software solutions.",
+        "Developed responsive frontend interfaces using React.js.",
+        "Implemented backend services, REST APIs, and databases using Python and Django."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Humanizing AI",
+      "startDate": "2024-02",
+      "endDate": "2024-10",
+      "description": "Developed a testing platform to evaluate the human-like quality of LLM-generated movie reviews using AI detection tools such as ZeroGPT and GPTZero.",
+      "highlights": [
+        "Compared prompting strategies.",
+        "Evaluated AI-generated content authenticity.",
+        "Collaborated in an Agile development team."
+      ],
+      "keywords": [
+        "Python",
+        "LLM",
+        "AI",
+        "ZeroGPT",
+        "GPTZero"
+      ]
+    },
+    {
+      "name": "Hearty Meal",
+      "startDate": "2024-02",
+      "endDate": "2024-10",
+      "description": "Developed a responsive web application providing personalized dietary recommendations for individuals with chronic diseases.",
+      "highlights": [
+        "Built frontend using Vue.js, Nuxt.js, and Tailwind CSS.",
+        "Developed backend using Next.js.",
+        "Implemented dietary information management features."
+      ],
+      "keywords": [
+        "Vue.js",
+        "Nuxt.js",
+        "Tailwind CSS",
+        "Next.js"
+      ]
+    },
+    {
+      "name": "Women In Tech",
+      "startDate": "2023-02",
+      "endDate": "2023-11",
+      "description": "Developed a digital platform helping elderly women in Malaysia and Thailand connect with their communities.",
+      "highlights": [
+        "Developed responsive frontend features using React.js.",
+        "Implemented Firebase database functionality.",
+        "Improved accessibility and user engagement."
+      ],
+      "keywords": [
+        "React.js",
+        "Firebase",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Project Management Software",
+      "startDate": "2022-07",
+      "endDate": "2022-10",
+      "description": "Developed a full-stack project management web application for startup teams.",
+      "highlights": [
+        "Implemented task management and sprint boards.",
+        "Built frontend using HTML and CSS.",
+        "Developed backend using Flask and Python."
+      ],
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Flask",
+        "Python",
+        "SQLite"
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Monash University Malaysia",
+      "studyType": "Bachelor of Software Engineering (Honours)",
+      "area": "Software Engineering",
+      "location": "Subang Jaya, Selangor",
+      "startDate": "2021-10",
+      "endDate": "2025-11"
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional Working Proficiency"
+    },
+    {
+      "language": "Bahasa Melayu",
+      "fluency": "Professional Working Proficiency"
+    }
+  ]
+}
