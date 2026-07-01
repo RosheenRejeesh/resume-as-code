@@ -102,6 +102,12 @@ jobs:
           ${{ matrix.resume_path }}/index.html
           ${{ matrix.resume_path }}/resume.html
           ${{ matrix.resume_path }}/resume.pdf
+    
+    - name: Cache node_modules
+      uses: actions/cache@v4
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-nodemodules-${{ hashFiles('**/package-lock.json', 'patches/**') }}
 
   deploy:
     runs-on: ubuntu-latest
