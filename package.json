@@ -6,12 +6,14 @@
   },
   "devDependencies": {
     "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1"
+    "ajv-formats": "^3.0.1",
+    "patch-package": "^8.0.1"
   },
   "scripts": {
     "export-html": "npx resumed render $FILE_PATH/resume.json --output $FILE_PATH/index.html --theme jsonresume-theme-engineering",
     "export-pdf": "node export-pdf.js $FILE_PATH",
     "validate": "node scripts/validate.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "postinstall": "patch-package"
   }
 }

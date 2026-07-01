@@ -1,0 +1,27 @@
+diff --git a/node_modules/jsonresume-theme-engineering/resume.hbs b/node_modules/jsonresume-theme-engineering/resume.hbs
+index 3c8e1cc..250a1ae 100644
+--- a/node_modules/jsonresume-theme-engineering/resume.hbs
++++ b/node_modules/jsonresume-theme-engineering/resume.hbs
+@@ -20,6 +20,7 @@
+         {{> work }}
+         {{> volunteer }}
+         {{> education }}
++        {{> languages }}
+         {{> awards }}
+     </body>
+ </html>
+diff --git a/node_modules/jsonresume-theme-engineering/views/languages.hbs b/node_modules/jsonresume-theme-engineering/views/languages.hbs
+new file mode 100644
+index 0000000..1c7efa2
+--- /dev/null
++++ b/node_modules/jsonresume-theme-engineering/views/languages.hbs
+@@ -0,0 +1,9 @@
++{{#if resume.languages.length}}
++<section id="languages">
++    <h2>Languages</h2>
++    {{#each resume.languages}}
++    {{#> item title=language subtitle=fluency}}
++    {{/item}}
++    {{/each}}
++</section>
++{{/if}}
