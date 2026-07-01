@@ -1,9 +1,12 @@
 diff --git a/node_modules/jsonresume-theme-engineering/resume.hbs b/node_modules/jsonresume-theme-engineering/resume.hbs
-index 3c8e1cc..250a1ae 100644
+index 3c8e1cc..79d4cd3 100644
 --- a/node_modules/jsonresume-theme-engineering/resume.hbs
 +++ b/node_modules/jsonresume-theme-engineering/resume.hbs
-@@ -20,6 +20,7 @@
+@@ -18,8 +18,10 @@
+         {{> basics }}
+         {{> skills }}
          {{> work }}
++        {{> projects }}
          {{> volunteer }}
          {{> education }}
 +        {{> languages }}
@@ -22,6 +25,28 @@ index 0000000..1c7efa2
 +    {{#each resume.languages}}
 +    {{#> item title=language subtitle=fluency}}
 +    {{/item}}
++    {{/each}}
++</section>
++{{/if}}
+diff --git a/node_modules/jsonresume-theme-engineering/views/projects.hbs b/node_modules/jsonresume-theme-engineering/views/projects.hbs
+new file mode 100644
+index 0000000..9e70560
+--- /dev/null
++++ b/node_modules/jsonresume-theme-engineering/views/projects.hbs
+@@ -0,0 +1,16 @@
++{{#if resume.projects.length}}
++<section id="projects">
++    <h2>Projects</h2>
++    {{#each resume.projects}}
++        {{#> item title=name subtitle=description startDate=startDate endDate=endDate}}
++        {{#if highlights.length}}
++        <ul class="highlights">
++            {{#each highlights}}
++            <li>{{{.}}}</li>
++            {{/each}}
++        </ul>
++        {{/if}}
++        {{/item}}
 +    {{/each}}
 +</section>
 +{{/if}}
